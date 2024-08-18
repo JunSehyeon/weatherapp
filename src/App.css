@@ -13,9 +13,49 @@ body{
   flex-direction: column;
 }
 
-.weather-box{
-  border: 3px solid skyblue;
+.weather-box {
+  background-image: url('https://emojigraph.org/media/google/light-blue-heart_1fa75.png'); /* 시나모롤 머리 모양 이미지 URL */
+  background-size: contain; /* 박스에 맞게 이미지 크기 조정 */
+  background-repeat: no-repeat; /* 이미지 반복 없음 */
+  background-position: center; /* 이미지를 중앙에 위치 */
+  width: 300px; /* 박스의 너비 */
+  height: 300px; /* 박스의 높이 */
   padding: 50px;
   border-radius: 30px;
-  background-color: skyblue;
+  border: none; /* 테두리 제거 */
+  
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  text-align: center; 
+  overflow: hidden; /* 박스의 내용이 이미지 밖으로 나가지 않도록 설정 */
+}
+
+.weather-content {
+  position: absolute; /* 박스 안에서 절대 위치 지정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  color: white; /* 텍스트 색상 (이미지에 따라 조정) */
+  font-size: 20px;
+  width: 100%; /* 박스 너비에 맞게 조정 */
+}
+.btn-light-custom {
+  background-color: white;
+  border-color: lightgray;
+  color: black;
+}
+
+.btn-light-custom:hover {
+  background-color: lightgray;
+  border-color: gray;
+}
+
+.btn-skyblue {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  color: white;
+}
+
+.btn-skyblue:hover {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
 }
